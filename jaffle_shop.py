@@ -129,6 +129,3 @@ def info_duration(info: Tuple[ExtractInfo, NormalizeInfo, LoadInfo]):
 #     print(f"Grouped resources + {params}")
 #     print(f"Duration: {info_duration(result_info)}")
 #     print()
-
-result_info = run_optimized(parallelized=True, workers=os.cpu_count(), buffer=100000, max_items=10000)
-print(f"Duration: {info_duration(result_info)}")
